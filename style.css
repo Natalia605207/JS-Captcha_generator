@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #00D6F7;
+    display: flex;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #ffffff;
+    margin-top: 100px;
+    padding: 20px;
+    width: 350px;
+    border:none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px #000;
+    gap: 15px;
+}
+
+h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.captcha-refresh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5px 5px 0px;
+    border: 2px solid #a0a0a0;
+    border-radius: 5px;
+    gap: 10px;
+    width: 100%;
+}
+
+.captcha-refresh:hover {
+    border: 2px solid #000;
+}
+
+.captcha {
+    font-family: "Special Elite", system-ui;
+    font-size: 25px;
+    font-style: italic;
+    text-decoration: line-through;
+    padding: 3px 15px;
+    color: #474554;
+    letter-spacing: 3px;
+    margin-top: 4px;
+}
+
+#generateBtn {
+    text-decoration: none;
+    color: #ffffff;
+    background: #171717;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border:none;
+}
+
+#fillCaptcha {
+    padding: 5px 15px;
+    height: 45px;
+    width: 100%;
+    margin-bottom: 3px;
+    border: 2px solid #a0a0a0;
+    border-radius: 5px;
+    font-size: 20px;
+    color: #474554;
+    font-family: "Montserrat", sans-serif;
+}
+
+#submitBtn {
+    padding: 10px 50px;
+    color:#BCB9CB;
+    background: #171717;
+    border: 2px solid #171717;
+    border-radius: 5px;
+    font-size: 17px;
+    font-family: "Montserrat", sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+
+#submitBtn:hover {
+    background: #222222;
+    color: #ffffff;
+}
+
+.green {
+    color: #009EA9;
+    font-weight: bolder;
+}
+
+.red {
+    color: #FF0000;
+    font-weight: bolder;
+}
+
+@media all and (max-width: 355px) {
+    .container {
+        width: 280px;
+    }
+}

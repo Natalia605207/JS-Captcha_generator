@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha generator</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/81ed789937.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+<body data-aos-easing="ease" data-aos-duration="1500" data-aos-delay="0">
+    <div class="container" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="400">
+        <h1>Captcha Generator</h1>
+        <div class="captcha-refresh">
+        <div id="captcha" class="captcha"><script>createCaptcha();</script></div>
+            <a href="#" id="generateBtn"><i class="fa-solid fa-arrow-rotate-right"></i></a>
+        </div>
+          <input
+            type="text"
+            name="fillCaptcha"
+            id="fillCaptcha"
+            placeholder="Enter captcha"
+          />
+        <div>
+            <button type="submit" id="submitBtn">Submit captcha</button>
+        </div>
+        <div id="validationMessage"></div>
+    </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="index.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
